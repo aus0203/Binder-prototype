@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.mainarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.binder-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.binder-item .foreground {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 20px 12px 12px;
+  border: 1px solid #eeeeee;
+  height: 240px;
+  z-index: 3;
+}
+
+.binder-item .foreground .title {
+  width: 72px;
+  text-align: center;
+}
+
+.binder-item .foreground .bottom-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.binder-item .foreground .bottom-area .label-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.binder-item .foreground .bottom-area .label-area .count {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.binder-item .foreground .bottom-area .label-area .color-label {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: #7d7d7d;
+  -webkit-box-shadow: inset 1px 5px 5px rgba(0, 0, 0, 0.21);
+          box-shadow: inset 1px 5px 5px rgba(0, 0, 0, 0.21);
+}
+
+.binder-item .foreground .bottom-area .overflow-more .a-icon-more {
+  height: 16px;
+  width: 16px;
+  padding: 4px;
+}
+
+.binder-item .foreground .bottom-area .overflow-more:hover .a-icon-more {
+  cursor: pointer;
+  background: #eeeeee;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.binder-item .background-card {
+  position: absolute;
+  top: 0;
+}
+
+.binder-item .background-card-1 {
+  left: 50%;
+  margin-left: -44px;
+  height: 180px;
+  border-radius: 2px;
+  width: 88px;
+  background: #d2d2d2;
+  z-index: 2;
+}
+
+.binder-item .background-card-2 {
+  left: 50%;
+  margin-left: -40px;
+  height: 180px;
+  border-radius: 2px;
+  width: 80px;
+  background: #afafaf;
+  z-index: 1;
+}
+
+.binder-item:hover {
+  -webkit-filter: drop-shadow(0px 10px 24px rgba(29, 36, 38, 0.12));
+          filter: drop-shadow(0px 10px 24px rgba(29, 36, 38, 0.12));
+}
+
+.binder-item:hover .foreground {
+  height: 218px;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.binder-item:hover .background-card-1 {
+  height: 240px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.binder-item:hover .background-card-2 {
+  height: 240px;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+/*# sourceMappingURL=main.css.map */
