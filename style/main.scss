@@ -37,6 +37,8 @@ p {
 .binder-item {
     position: relative;
     cursor: pointer;
+    filter: drop-shadow(0px 3px 8px rgba(29, 36, 38, 0.04));
+
     .foreground {
         position: absolute;
         display: flex;
